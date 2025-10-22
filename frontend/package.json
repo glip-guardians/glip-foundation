@@ -1,0 +1,10 @@
+{
+  "name": "glip-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "echo \"Add your React/Next dev script here\"",
+    "build": "echo \"Add your build script here\"",
+    "start": "echo \"Add your start script here\""
+  }
+}

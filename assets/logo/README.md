@@ -1,0 +1,1 @@
+GLIP logos (SVG/PNG).
