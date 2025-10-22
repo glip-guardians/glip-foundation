@@ -1,22 +1,21 @@
 {
-  "name": "glip-foundation",
-  "version": "0.1.0",
+  "name": "glip-sale-hardhat-mainnet",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "clean": "hardhat clean",
-    "compile": "hardhat compile",
-    "test": "hardhat test",
-    "deploy:sepolia": "hardhat run scripts/deploy_contracts.js --network sepolia",
-    "deploy:mainnet": "hardhat run scripts/deploy_contracts.js --network mainnet",
-    "verify:sepolia": "hardhat verify --network sepolia",
-    "verify:mainnet": "hardhat verify --network mainnet"
-  },
-  "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "dotenv": "^16.4.5",
-    "hardhat": "^2.22.10"
+    "build": "npx hardhat compile",
+    "clean": "npx hardhat clean",
+    "deploy:mainnet": "npx hardhat run --network mainnet scripts/deploy.js",
+    "fund:mainnet": "npx hardhat run --network mainnet scripts/fund_glip.js",
+    "setprice:mainnet": "npx hardhat run --network mainnet scripts/set_price.js"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^5.0.2"
+    "@openzeppelin/contracts": "5.0.2",
+    "dotenv": "16.4.5",
+    "ethers": "5.7.2"
+  },
+  "devDependencies": {
+    "hardhat": "2.11.2",
+    "@nomiclabs/hardhat-ethers": "2.2.2"
   }
 }
