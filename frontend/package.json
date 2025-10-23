@@ -1,10 +1,21 @@
 {
-  "name": "glip-frontend",
+  "name": "glip-sale-hardhat-mainnet",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.1.0",
   "scripts": {
-    "dev": "echo \"Add your React/Next dev script here\"",
-    "build": "echo \"Add your build script here\"",
-    "start": "echo \"Add your start script here\""
+    "build": "npx hardhat compile",
+    "clean": "npx hardhat clean",
+    "deploy:mainnet": "npx hardhat run --network mainnet scripts/deploy.js",
+    "fund:mainnet": "npx hardhat run --network mainnet scripts/fund_glip.js",
+    "setprice:mainnet": "npx hardhat run --network mainnet scripts/set_price.js"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "5.0.2",
+    "dotenv": "16.4.5",
+    "ethers": "5.7.2"
+  },
+  "devDependencies": {
+    "hardhat": "2.11.2",
+    "@nomiclabs/hardhat-ethers": "2.2.2"
   }
 }
