@@ -1,0 +1,32 @@
+{
+  "name": "GLIP Official Token List",
+  "logoURI": "https://cdn.imweb.me/thumbnail/20251023/7c2d51fa8c1bc.png",
+  "timestamp": "2025-11-04T00:00:00+09:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {
+    "eco": {
+      "name": "Eco-friendly Project",
+      "description": "Sustainable blockchain project with on-chain fee rebate and ESG tracking."
+    },
+    "governance": {
+      "name": "Governance Token",
+      "description": "Used for staking, voting, and on-chain governance participation."
+    }
+  },
+  "keywords": ["GLIP", "ESG", "Rebate", "DeFi", "EcoFriendly", "GLIPToken"],
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0xD0b86b79AE4b8D7bb88b37EBe228ce343D79794e",
+      "name": "GLIP Token",
+      "symbol": "GLIP",
+      "decimals": 18,
+      "logoURI": "https://cdn.imweb.me/thumbnail/20251023/7c2d51fa8c1bc.png",
+      "tags": ["eco", "governance"]
+    }
+  ]
+}
